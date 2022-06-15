@@ -20,7 +20,7 @@ public class Controle {
         Scanner lerTipoConta = new Scanner(System.in);
         Scanner lerNome = new Scanner(System.in);
 
-        System.out.println("Escolha o tipo da conta:\n(1) - Conta Corrente\n(2) - Conta Poupança");
+        System.out.println("\nEscolha o tipo da conta:\n(1) - Conta Corrente\n(2) - Conta Poupança");
         int tipoConta = lerTipoConta.nextInt();
 
         System.out.println("\nInforme o nome do titular: ");
@@ -65,7 +65,7 @@ public class Controle {
         if(contaNum != -1){
             System.out.println("Digite um valor: ");
             double valor = lerValor.nextDouble();
-            
+
             if (!checarSaque(numeroConta,valor,banco)) {
                 banco.getContas().get(contaNum).sacar(valor);
                 System.out.println("Saque realizado com sucesso!\n");
