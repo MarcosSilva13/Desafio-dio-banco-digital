@@ -29,13 +29,11 @@ public class Main {
                 case 6:
                     con.listarContas(banco);
                     break;
+                default:
+                    System.out.println("Opção não existe!\n");
+                    break;
             }
-
         } while(menu != 7);
-
-        for(Conta contas : banco.getContas()){
-            contas.imprimirExtrato();
-        }
     }
 }
 
