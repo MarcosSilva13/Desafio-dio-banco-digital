@@ -10,7 +10,7 @@ public class ContaPoupanca extends Conta{
     }
 
     @Override
-    public void imprimircontas() {
+    public void imprimirContas() {
         System.out.println("*** Conta Poupança ***");
         listarContas();
     }

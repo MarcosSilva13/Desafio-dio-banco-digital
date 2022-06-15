@@ -3,7 +3,6 @@ public class Controle {
     public int menu(){
         Scanner ler = new Scanner(System.in);
 
-        System.out.println("Escolha uma opçao: ");
         System.out.println("(1) - Criar Conta");
         System.out.println("(2) - Exibir Extrato");
         System.out.println("(3) - Sacar");
@@ -11,6 +10,7 @@ public class Controle {
         System.out.println("(5) - Transferir");
         System.out.println("(6) - Listar Contas");
         System.out.println("(7) - Sair");
+        System.out.println("Escolha uma opçao: ");
 
         return ler.nextInt();
     }
@@ -133,7 +133,7 @@ public class Controle {
         if(banco.getContas().size() > 0){
             System.out.println("\t*** CONTAS ***");
             for (Conta contas: banco.getContas()) {
-                contas.imprimircontas();
+                contas.imprimirContas();
             }
         } else {
             System.out.println("Não existe contas cadastradas!\n");

@@ -11,7 +11,7 @@ public class ContaCorrente extends Conta {
     }
 
     @Override
-    public void imprimircontas() {
+    public void imprimirContas() {
         System.out.println("*** Conta Corrente ***");
         listarContas();
     }

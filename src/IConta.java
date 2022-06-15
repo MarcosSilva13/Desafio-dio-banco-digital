@@ -8,5 +8,5 @@ public interface IConta {
 
     void imprimirExtrato();
 
-    void imprimircontas();
+    void imprimirContas();
 }
