@@ -29,6 +29,8 @@ public class Main {
                 case 6:
                     con.listarContas(banco);
                     break;
+                case 7:
+                    break;
                 default:
                     System.out.println("Opção não existe!\n");
                     break;
